@@ -1,0 +1,50 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+<title>user_login</title>
+<style>
+fieldset{
+    width: fit-content;
+    margin-top: 170px;
+    border-radius:30px;
+}body{
+    background-image: url('https://wallpapers.com/images/hd/beautiful-beach-6000-x-4000-background-99st3uucl2brz9f9.jpg');
+}
+</style>
+{% endblock %}
+
+<center>
+{% block body_block %}
+<fieldset>
+<form  method="POST">
+    {% csrf_token %}
+<!--<label for="username">username</label>
+<input type="text" name="username" id="username"><br><br>
+<label for="password">password</label>
+<input type="password" name="password" id="password"><br><br>
+<a href="{%  url 'forgot_pw' %}" class="nav-link">Forgot_password</a>
+<input type="submit" value="login">-->
+
+<div class="mask" style="background-color: lightblue">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">login page</h1>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username"><br><br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password"><br><br>
+    
+        <a class="btn btn-outline-light btn-lg" href="{%  url 'forgot_pw' %}" role="button"
+        >Forgot_password</a><br><br>
+        <input type="submit" value="login">
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+</fieldset>
+
+
+
+{% endblock %}
+</center>

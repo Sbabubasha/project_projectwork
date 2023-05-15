@@ -1,0 +1,301 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock %}
+
+{% block body_block %}
+    {% if username   %}
+            
+            <header>
+              <!-- Navbar -->
+              <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i class="fas fa-bars"></i>
+                  </button>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!-- Navbar -->
+            
+              <!-- Jumbotron -->
+              <div class="p-5 text-center bg-light">
+                <h1 class="mb-3">welcome to home page {{username}}</h1>
+                <h4 class="mb-3">this is your isolated </h4>
+                
+              </div>
+              <!-- Jumbotron -->
+            </header>
+
+            <footer class="text-center text-white" style="background-color: #caced1;">
+              <!-- Grid container -->
+              <div class="container p-4">
+                <!-- Section: Images -->
+                <section class="">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                      <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                      >
+                        <img
+                          src="https://wallpapers.com/images/hd/beautiful-beach-6000-x-4000-background-99st3uucl2brz9f9.jpg"
+                          class="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            class="mask"
+                            style="background-color: rgba(251, 251, 251, 0.2);"
+                          ></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                      <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                      >
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                          class="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            class="mask"
+                            style="background-color: rgba(251, 251, 251, 0.2);"
+                          ></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                      <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                      >
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                          class="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            class="mask"
+                            style="background-color: rgba(251, 251, 251, 0.2);"
+                          ></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                      <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                      >
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                          class="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            class="mask"
+                            style="background-color: rgba(251, 251, 251, 0.2);"
+                          ></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                      <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                      >
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                          class="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            class="mask"
+                            style="background-color: rgba(251, 251, 251, 0.2);"
+                          ></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                      <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                      >
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                          class="w-100"
+                        />
+                        <a href="#!">
+                          <div
+                            class="mask"
+                            style="background-color: rgba(251, 251, 251, 0.2);"
+                          ></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- Section: Images -->
+              </div>
+              <!-- Grid container -->
+            
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                 welcome to © 2023 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+  {% else %}
+  <h1>welcome to home page</h1>
+<header>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREc6vN1JA5Ea_6YgcO0_BADPfKZlYUHrJLwA&usqp=CAU" alt="">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a enim vel tenetur hic? Id iste dolor saepe minima error porro inventore optio exercitationem, libero et, officia incidunt esse repudiandae.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet facere porro quaerat neque, ducimus reprehenderit! Quisquam totam officia consectetur soluta ab iste a minus ut tempora. Ipsa, similique quod.</p>
+
+</header>
+  <footer class="text-center text-white" style="background-color: #caced1;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://wallpapers.com/images/hd/beautiful-beach-6000-x-4000-background-99st3uucl2brz9f9.jpg"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://www.lifewire.com/thmb/hcX8DsZHOwpNedjQySs_TXn_nPA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/colorful-chairs-free-beach-wallpapers-beach-backgrounds-587fb9eb5f9b584db31f75d4.jpg"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://wallpapers.com/images/hd/beautiful-beach-6000-x-4000-background-99st3uucl2brz9f9.jpg"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREc6vN1JA5Ea_6YgcO0_BADPfKZlYUHrJLwA&usqp=CAU"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNsJjiFFBxL6J5C1sOE3j21Cr0wd2eOhBBQ&usqp=CAU"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+       welcome to © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+      {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+{% extends 'dummy.html' %}
+
+
+{% block title %}
+<title>forgot_pw</title>
+<style>
+    body{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevHzxX8gg4Ldlk2Y1j9vbozf5n5mLZ1wk9g&usqp=CAU');
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    
+    }fieldset{
+        border-radius: 30px;
+        margin-top: 170px;
+        width: fit-content;
+        background: linear-gradient(45deg,aquamarine,azure);
+        
+    }
+</style>
+{% endblock %}
+
+{% block body_block %}
+
+<fieldset>
+<h1>forgot_page</h1>
+
+    <form  method="POST">
+        {% csrf_token %}
+        <label for="uo">usrname</label>
+        <input type="text" name="uo" id="uo"><br><br>
+        <label for="password">new password</label>
+        <input type="password" name="po" id="po"><br><br>
+
+        <input type="submit" value="submit">   
+     </form>
+    </fieldset>
+{% endblock %}

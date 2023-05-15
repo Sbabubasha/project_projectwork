@@ -1,0 +1,45 @@
+
+{% extends 'dummy.html '  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Document</title>
+    {% endblock %}
+
+    {%  block body_block %}
+    <style>
+        fieldset{
+            width: fit-content;
+            border-radius: 20px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR07OcPYDlPXHtjKcGEh2kAamswR0vyMPAP68vXPjAM&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }label{
+            color:ghostwhite;
+        }span{
+            color:yellow;
+        }body{
+            background-image: url('https://www.lifewire.com/thmb/hcX8DsZHOwpNedjQySs_TXn_nPA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/colorful-chairs-free-beach-wallpapers-beach-backgrounds-587fb9eb5f9b584db31f75d4.jpg');
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <marquee behavior="alter" direction="right"><h1>registraion form</h1></marquee>
+        <fieldset>
+        <form  method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ufo.as_p}}
+            {{pfo.as_p}}
+            <input type="submit" value="register">
+        </form>
+        </fieldset>
+    </center>
+    {% endblock %}
+</body>
+</html>
